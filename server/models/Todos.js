@@ -1,17 +1,15 @@
-import mongoose from 'mongoose';
-import {bool} from "prop-types";
+import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
 const TodoScheme = new Schema({
    todoName: {
-       type: String,
-       required: true
+       type:      String,
+       required:  true
    },
     completed: {
-        type: bool,
-        required: false,
-        default: false
+        type:     Boolean,
+        default:  false
     }
 });
 

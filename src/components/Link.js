@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
 const Link = ({ active, children, onClick }) => {
     if (active) {
@@ -8,7 +8,8 @@ const Link = ({ active, children, onClick }) => {
 
     return (
         <a
-            href=""
+            className={"filter-link"}
+            href="#"
             onClick={e => {
                 e.preventDefault();
                 onClick();

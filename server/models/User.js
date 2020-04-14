@@ -12,14 +12,17 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
+    password: {
+        type: String,
+        required: true
+    },
     todos: {
-        type: [TodoScheme]
+        type: [TodoScheme],
+        default: [],
+        required: false
     }
 });
 
-// const User = mongoose.model('User', {
-//
-// });
 
 export default UserSchema
 

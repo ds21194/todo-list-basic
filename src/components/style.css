@@ -1,0 +1,37 @@
+#app {
+    max-height: 600px;
+    width: 30%;
+    margin: auto;
+    /*padding: 5px;*/
+    border: 1px solid #001f5e;
+    align-content: center;
+    background-color: azure;
+    text-align: center;
+}
+.filter-link {
+        text-decoration: none;
+        }
+        .filter-link:hover {
+            text-decoration: underline;
+        }
+        .filter-link:visited {
+            color: black;
+        }
+     .todo{
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         background-color: white;
+     }
+     .completed-todo {
+         text-decoration: line-through;
+         list-style-type: none;
+     }
+.register-form {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
