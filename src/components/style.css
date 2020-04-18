@@ -34,4 +34,12 @@
     padding-bottom: 10px;
 }
 
+.login-handler-nav-links {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
 

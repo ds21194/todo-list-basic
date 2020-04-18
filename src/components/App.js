@@ -1,13 +1,16 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from "./Footer";
 import AddTodo from "../screens/AddTodo";
 import VisibleTodoList from "../screens/VisibleTodoList";
-import RegisterForm from "../screens/RegisterForm";
+import LoggingHandler from "../screens/LoginHandler";
+import Login from "./Login";
 import './style.css';
 
 const App = (store) => (
     <div id={"app"}>
-        <RegisterForm />
+        <Login text1={"is this"} text2={"works?"}/>
+        <LoggingHandler />
         <AddTodo />
         <Footer />
         <VisibleTodoList />

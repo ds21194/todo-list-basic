@@ -9,6 +9,6 @@ const Footer = () => (
         <FilterLink filter={VisibilityFilter.SHOW_ACTIVE}> {" Active |"} </FilterLink>
         <FilterLink filter={VisibilityFilter.SHOW_COMPLETED}> {" Completed"} </FilterLink>
     </div>
-);
+);  
 
 export default Footer

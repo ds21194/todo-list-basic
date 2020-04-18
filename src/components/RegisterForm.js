@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import { setUserLogin, UserLogin } from "../actions"
-import "../components/style.css";
+import "./style.css";
 import {useStore} from "react-redux";
 
 const getOnChangeGetter = (key) => {
@@ -67,10 +67,9 @@ class RegisterForm extends Component{
                     name: data.name,
                     email: data.email
                 };
-                const key = "loggedUser";
-                localStorage.setItem(key, JSON.stringify(sessionObject));
-                let store = useStore();
-                store.dispatch(setUserLogin(UserLogin.USER_LOGGED_IN, key));
+
+                localStorage.setItem(this.props.sessionKey, JSON.stringify(sessionObject));
+                this.props.setRegistered();
             })
             .catch((err)=>{
                 console.log(err);
